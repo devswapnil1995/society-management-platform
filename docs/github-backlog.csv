@@ -1,0 +1,43 @@
+Title,Description,Labels,Milestone
+Setup .NET 10 Clean Architecture Solution,Create backend projects Api Application Domain Infrastructure with dependency injection and health endpoint,backend;devops,Phase 0 - Platform Setup
+Configure PostgreSQL Database,Install PostgreSQL configure EF Core connection and create first migration,database;backend,Phase 0 - Platform Setup
+Setup Angular 21 Nx Workspace,Create Nx workspace and apps resident portal admin portal security app,frontend,Phase 0 - Platform Setup
+Setup Angular Material and Tailwind,Install UI framework and configure base theme,frontend,Phase 0 - Platform Setup
+Setup Docker Compose Environment,Create docker setup for backend frontend postgres redis,devops,Phase 0 - Platform Setup
+Setup CI/CD Pipeline,Configure GitHub Actions build and test pipeline,devops,Phase 0 - Platform Setup
+Implement Tenant Entity,Create tenant table representing societies and tenant middleware,backend;tenant,Phase 1 - SaaS Core
+Create Subscription Plan Model,Implement SubscriptionPlans entity and plan configuration,backend;tenant,Phase 1 - SaaS Core
+Implement Subscription Management API,Create APIs to assign and manage subscriptions,backend,Phase 1 - SaaS Core
+Implement Authentication System,Implement login register JWT token refresh flow,backend;auth,Phase 1 - SaaS Core
+Create Angular Authentication Module,Login UI route guards token storage,frontend;auth,Phase 1 - SaaS Core
+Create Society Entity and API,Implement society creation retrieval and update APIs,backend;society,Phase 2 - Society Management
+Implement Buildings Management,Create building entity APIs and database relations,backend;society,Phase 2 - Society Management
+Implement Flats Management,Create flats entity APIs and relationships with buildings,backend;society,Phase 2 - Society Management
+Create Society Admin Dashboard UI,Create admin portal dashboard page and navigation,frontend;society,Phase 2 - Society Management
+Create Resident Entity,Implement resident entity and database schema,backend;residents,Phase 3 - Resident Management
+Implement Resident APIs,Create CRUD APIs for residents,backend;residents,Phase 3 - Resident Management
+Implement Move In Move Out Logic,Track resident move in and move out dates,backend;residents,Phase 3 - Resident Management
+Create Resident Portal Dashboard UI,Create resident dashboard and profile pages,frontend;residents,Phase 3 - Resident Management
+Create Maintenance Bill Entity,Implement maintenance bill table and relations,backend;billing,Phase 4 - Maintenance Billing
+Implement Maintenance Bill Generation,Create background job to generate monthly maintenance bills,backend;billing,Phase 4 - Maintenance Billing
+Integrate Payment Gateway,Integrate Razorpay payment gateway for maintenance payments,backend;payments,Phase 4 - Maintenance Billing
+Create Payment API,Implement APIs for recording and retrieving payments,backend;payments,Phase 4 - Maintenance Billing
+Create Billing Dashboard UI,Create admin billing dashboard and payment status tables,frontend;billing,Phase 4 - Maintenance Billing
+Create Complaint Entity and API,Implement complaint entity APIs and workflow,backend;complaints,Phase 5 - Complaints & Visitors
+Implement Complaint Assignment Workflow,Allow admin to assign complaints to staff,backend;complaints,Phase 5 - Complaints & Visitors
+Create Visitor Entry System,Implement visitor checkin checkout APIs,backend;visitors,Phase 5 - Complaints & Visitors
+Create Security Gate UI,Implement security gate visitor entry interface,frontend;visitors,Phase 5 - Complaints & Visitors
+Implement Announcement Module,Create announcement APIs and resident notifications,backend;communication,Phase 6 - Communication & Booking
+Create Announcement UI,Create admin UI for posting notices and residents viewing notices,frontend;communication,Phase 6 - Communication & Booking
+Implement Facility Booking APIs,Create booking entity APIs and slot management,backend;booking,Phase 6 - Communication & Booking
+Create Facility Booking UI,Allow residents to book society facilities from UI,frontend;booking,Phase 6 - Communication & Booking
+Create Expense Entity and APIs,Implement accounting expenses module APIs,backend;accounting,Phase 7 - Accounting & Documents
+Create Vendor Management Module,Implement vendor entity APIs,backend;accounting,Phase 7 - Accounting & Documents
+Create Document Storage Service,Implement document upload storage using cloud storage,backend;documents,Phase 7 - Accounting & Documents
+Create Document Management UI,Allow uploading viewing and downloading documents,frontend;documents,Phase 7 - Accounting & Documents
+Create Analytics Dashboard APIs,Implement analytics endpoints for billing complaints residents,backend;analytics,Phase 8 - Analytics
+Create Admin Analytics Dashboard UI,Charts and reports for admin dashboard,frontend;analytics,Phase 8 - Analytics
+Implement System Monitoring,Integrate logging monitoring dashboards,devops;performance,Phase 9 - Optimization
+Implement Database Backup Strategy,Automate database backups and recovery plan,devops;security,Phase 9 - Optimization
+Optimize API Performance,Add caching and query optimization,backend;performance,Phase 9 - Optimization
+Security Hardening,Add rate limiting headers and vulnerability scanning,backend;security,Phase 9 - Optimization
