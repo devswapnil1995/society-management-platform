@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@society/api-services": ["libs/api-services/src/index.ts"]
+      "@society/api-services": ["libs/api-services/src/index.ts"],
+      "@society/auth": ["libs/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

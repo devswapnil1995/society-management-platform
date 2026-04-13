@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using SocietyManagement.Application.Interfaces;
 using SocietyManagement.Infrastructure.Persistence;
+using SocietyManagement.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
@@ -17,6 +19,9 @@ builder.Services.AddSwaggerGen();
 //Register DbContext with PostgreSQL provider
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
+builder.Services.AddScoped<IJwtService, JwtService>();
 
 var app = builder.Build();
 app.UseCors("AllowAll");
